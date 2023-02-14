@@ -13,9 +13,11 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  fluttertoast: ^8.1.3
   flutter_bloc: ^8.1.2
   equatable: ^2.0.5
   get_it: ^7.2.0
+  icons_launcher: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -25,3 +27,21 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/json/
+
+icons_launcher:
+  image_path: "assets/images/ic_launcher.png"
+  platforms:
+    android:
+      enable: true
+      image_path: "assets/images/ic_launcher.png"
+      adaptive_background_color: "#ffffff"
+      #      adaptive_background_image: 'assets/ic_background.png'
+      adaptive_foreground_image: "assets/images/ic_launcher.png"
+      adaptive_round_image: "assets/images/ic_launcher.png"
+      adaptive_monochrome_image: "assets/images/ic_launcher.png"
+    ios:
+      enable: true
